@@ -6,3 +6,8 @@ app = Flask(__name__)
 def la_funcion():
     return "Hola, Mundo!"
 
+@app.route("/bye/<nombre>")
+def otra_funcion(nombre):
+    return f"hasta luego {nombre}"
+    
+
